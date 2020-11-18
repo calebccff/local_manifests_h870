@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- Linux kernel 4.4 (Android) -->
+    <project path="kernel/lge/h870" name="calebccff/android_kernel_lg_h870" revision="3b4c996dc884e096f4ca6f58314bf5707f0613c4"/>
+
+    <!-- Device configuration -->
+    <project path="device/lge/h870" name="LineageOS/android_device_lge_h870" />
+
+    <!-- Forked hybris-patches with frameworks/av/ build fix for droidmedia -->
+    <!-- <remove-project path="hybris-patches" name="mer-hybris/hybris-patches" />
+    <project path="hybris-patches" name="sailfishos-oneplus5/hybris-patches" revision="hybris-16.0" /> -->
+
+    <!-- Forked hybris-boot with miscellaneous fixes for OP5/5T devices -->
+    <!-- <remove-project path="hybris/hybris-boot" name="mer-hybris/hybris-boot" />
+    <project path="hybris/hybris-boot" name="sailfishos-oneplus5/hybris-boot" revision="custom" /> -->
+
+
+    <!-- For "make libbiometry_fp_api_32" before building SFOS RPMs -->
+    <!-- <project path="hybris/mw/sailfish-fpd-community" name="piggz/sailfish-fpd-community" revision="master" /> -->
+
+    <!-- Custom hybris installer implementation (https://git.io/fjMH9) -->
+    <project path="hybris/hybris-installer" name="sailfishos-oneplus5/hybris-installer" revision="master" />
+
+</manifest>
